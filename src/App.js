@@ -85,7 +85,7 @@ function App() {
           </div>
         </div>
       </section>
-      {/* <div class="area">
+      <div class="area">
         <ul class="circles">
           <li></li>
           <li></li>
@@ -98,7 +98,7 @@ function App() {
           <li></li>
           <li></li>
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 }

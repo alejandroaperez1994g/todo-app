@@ -43,7 +43,7 @@ function App() {
             <img
               height="90px"
               src="https://as1.ftcdn.net/jpg/03/91/19/22/500_F_391192211_2w5pQpFV1aozYQhcIw3FqA35vuTxJKrB.jpg"
-              alt="user.profle"
+              alt=""
               className="avatar"
             />
             <h3>Alejo</h3>

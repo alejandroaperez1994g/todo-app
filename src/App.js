@@ -40,13 +40,22 @@ function App() {
       <section className="glass">
         <div className="dashboard">
           <div className="user">
-            <img height="50px" src="" alt="user.profle" className="avatar" />
+            <img
+              height="90px"
+              src="https://as1.ftcdn.net/jpg/03/91/19/22/500_F_391192211_2w5pQpFV1aozYQhcIw3FqA35vuTxJKrB.jpg"
+              alt="user.profle"
+              className="avatar"
+            />
             <h3>Alejo</h3>
             <p>Pro Member</p>
           </div>
           <div className="links">
             <div className="link">
-              <img height="50px" src="" alt="" />
+              <img
+                height="50px"
+                src="https://to-do-cdn.microsoft.com/static-assets/c87265a87f887380a04cf21925a56539b29364b51ae53e089c3ee2b2180148c6/icons/logo.png"
+                alt=""
+              />
               <h2>ToDo</h2>
             </div>
           </div>

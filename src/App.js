@@ -14,7 +14,6 @@ function App() {
     db.collection("todos")
       .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) => {
-        // console.log(snapshot.docs.map((doc) => doc.data()));
         setTodos(
           snapshot.docs.map((doc) => ({
             id: doc.id,
@@ -26,12 +25,10 @@ function App() {
 
   const addTodo = (event) => {
     event.preventDefault();
-    console.log(todos);
     db.collection("todos").add({
       text: input,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
-    // setTodos([...todos, input]);
     setInput("");
   };
 
@@ -66,6 +63,7 @@ function App() {
             <form>
               <input
                 type="text"
+                value={input}
                 onChange={(event) => setInput(event.target.value)}
               />
               <button

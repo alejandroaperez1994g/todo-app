@@ -17,6 +17,41 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.buttons {
+  padding-top: 5px;
+}
+
+.button_delete {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  color: black;
+  font-weight: 600;
+  /* margin-left: 25px; */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border-color: #426696;
+  cursor: pointer;
+}
+
+.button_edit {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  color: black;
+  font-weight: 600;
+  /* margin-left: 25px; */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border-color: #426696;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .date {
   font-weight: bold;
   background: linear-gradient(to left top, #65dfc9, #46abbb);

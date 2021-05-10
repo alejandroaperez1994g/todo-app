@@ -59,3 +59,21 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  /* width: 50%; */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .date {
+    font-size: 10px;
+  }
+}

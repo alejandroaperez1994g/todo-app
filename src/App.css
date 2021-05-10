@@ -63,7 +63,7 @@ h3 {
 }
 
 .dashboard {
-  flex: 1;
+  flex: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,10 +75,12 @@ h3 {
     rgba(255, 255, 255, 0.3)
   );
   border-radius: 0.5rem;
+  width: 250px;
 }
 
 .games {
   flex: 2;
+  margin: auto;
 }
 
 .status {
@@ -96,7 +98,7 @@ h3 {
   border-radius: 0.5rem;
 }
 .games {
-  margin: 5rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -277,5 +279,47 @@ h3 {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 25px;
+  }
+  .glass {
+    flex-direction: column;
+    height: 70vh;
+    width: 80%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .dashboard .user img {
+    height: 40px;
+  }
+  .dashboard {
+    height: 200px;
+    flex: 1;
+    flex-direction: row;
+    width: auto;
+  }
+  .link img {
+    height: 25px;
+  }
+  .link h2 {
+    display: none;
+  }
+  .cards {
+    height: 50vh;
+  }
+  .user,
+  .links {
+    flex: 1;
+  }
+  .games {
+    flex: 0;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
   }
 }

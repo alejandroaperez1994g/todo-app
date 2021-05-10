@@ -49,7 +49,6 @@ function Todo(props) {
           >
             Close
           </button>
-          <button onClick={(event) => console.log(input)}>Test</button>
         </div>
       </Modal>
       <div className="body">

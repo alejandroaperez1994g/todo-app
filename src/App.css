@@ -282,7 +282,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 970px) {
   h1 {
     font-size: 25px;
   }

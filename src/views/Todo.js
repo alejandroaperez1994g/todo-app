@@ -5,13 +5,22 @@ import { Modal } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   paper: {
-    position: "absolute",
-    width: 400,
-    backgroundColor: theme.palette.background.paper,
-    border: "2px solid #000",
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '15%',
+    width: '75%',
+    margin: 'auto',
+    display: 'flex',
+    flexDirection: 'column',
+    background: 'black',
+    opacity: 0.7,
+    borderRadius: 10,
   },
 }));
 
@@ -32,11 +41,14 @@ function Todo(props) {
     <>
       <Modal
         className={classes.paper}
+        style={{ alignItems: "center", justifyContent: "center", }}
         open={open}
         onClose={(e) => setOpen(false)}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
       >
         <div>
-          <h1>Open</h1>
+          <h1>Edita tu nota</h1>
           <input
             value={input}
             placeholder={props.todo.todo}
@@ -70,7 +82,7 @@ function Todo(props) {
               </button>
             </div>
           </div>
-          <div class="date">1-5-2021</div>
+          <div class="date">{props.todo.date.toDate().toDateString("yyyy-MM-dd")}</div>
         </div>
       </div>
     </>

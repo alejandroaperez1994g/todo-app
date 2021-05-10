@@ -18,9 +18,11 @@ function App() {
           snapshot.docs.map((doc) => ({
             id: doc.id,
             todo: doc.data().text,
+            date: doc.data().timestamp,
           }))
         );
       });
+    console.log(todos);
   }, [input]);
 
   const addTodo = (event) => {
@@ -79,15 +81,8 @@ function App() {
             </form>
           </div>
           <div className="cards">
-            {/* <div className="card">
-              <div className="card-info">
-                <h2>Nota 1 </h2>
-                <p>Some info</p>
-              </div>
-              <div className="date">1-5-2021</div>
-            </div> */}
             {todos.map((todo) => (
-              <Todo todo={todo} />
+              <Todo key={todo.uid} todo={todo} />
             ))}
           </div>
         </div>
